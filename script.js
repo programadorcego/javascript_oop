@@ -24,4 +24,14 @@ class Carro
 		this.ligado = false;
 		this.ld = "não está ligado";
 	}
+	
+	get model()
+	{
+		return this.modelo;
+	}
+	
+	set model(modelo)
+	{
+		this.modelo = modelo;
+	}
 }
