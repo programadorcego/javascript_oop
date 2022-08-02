@@ -34,4 +34,9 @@ class Carro
 	{
 		this.modelo = modelo;
 	}
+	
+	static staticMethod()
+	{
+		return "Isso é um método estático!";
+	}
 }
