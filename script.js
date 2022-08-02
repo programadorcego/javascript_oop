@@ -1,42 +1,26 @@
 class Carro
 {
-	constructor(modelo, ano)
+	constructor(marca)
 	{
-		this.modelo = modelo;
-		this.ano = ano;
-		this.ligado = false;
-		this.ld = "não está ligado";
+		this.marca = marca;
 	}
 	
-	info()
+	presente()
 	{
-		document.write('Este carro é um ' + this.modelo + ' ' + this.ano + ' e ' + this.ld);
+		return `Eu tenho um ${this.marca}`;
 	}
-	
-	ligar()
+}
+
+class Modelo extends Carro
+{
+	constructor(marca, modelo)
 	{
-		this.ligado = true;
-		this.ld = "está ligado";
-	}
-	
-	desligar()
-	{
-		this.ligado = false;
-		this.ld = "não está ligado";
-	}
-	
-	get model()
-	{
-		return this.modelo;
-	}
-	
-	set model(modelo)
-	{
+		super(marca);
 		this.modelo = modelo;
 	}
 	
-	static staticMethod()
+	mostrar()
 	{
-		return "Isso é um método estático!";
+		return `${this.presente()}. Ele é um ${this.modelo}`;
 	}
 }

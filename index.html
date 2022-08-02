@@ -2,7 +2,7 @@
 <html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
-		<title>Javascript OOP - Aula 4 - Método Estático</title>
+		<title>Javascript OOP - Aula 5 - Herança</title>
 	</head>
 	
 	<body>
@@ -12,9 +12,8 @@
 		<script src="script.js"></script>
 		
 		<script>
-			carro = new Carro('Ford', 2001);
-			carro.model = "Fiat";
-			document.write(Carro.staticMethod());
+			let carro = new Modelo('Ford', 'Mustang');
+			document.write(carro.mostrar());
 		</script>
 	</body>
 </html>
